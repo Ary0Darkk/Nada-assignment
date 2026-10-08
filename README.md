@@ -36,4 +36,4 @@ The tests cover typical API requirements, edge cases, the 3-hop shortest path lo
 5. Create better modular separation for error handling (e.g. specialized exception types returning corresponding HTTP status codes).
 
 ## AI Tools Used
-- Cursor / Copilot for auto-completion and scaffolding boilerplate.
+- Chatgpt and Gemini - free version used.
