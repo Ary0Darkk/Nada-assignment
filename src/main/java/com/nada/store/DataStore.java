@@ -19,8 +19,8 @@ public class DataStore {
     public Person createPerson(String name) {
         int id = idGenerator.getAndIncrement();
         Person p = new Person(id, name);
+        connections.put(id, ConcurrentHashMap.newKeySet()); // Put connections first to avoid race conditions
         people.put(id, p);
-        connections.put(id, ConcurrentHashMap.newKeySet());
         return p;
     }
 
